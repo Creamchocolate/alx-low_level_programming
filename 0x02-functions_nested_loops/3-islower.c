@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _islower - Entry point
- * @c - is any character
+ * @c: - is any character
  * Return: Always 0 (sucecess)
  */
 
