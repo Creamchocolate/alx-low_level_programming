@@ -6,15 +6,13 @@
  */
 
 int _abs(int r)
-{
-	int n;
-	
+{	
 	if (r == -1 || r == 1)
 	{
-		n = (r * r);
+		_putchar(r * r);
 	}
 	else
 	{
-		n = ((r * r) / 2);
+		_putchar((r * r) / 2);
 	}
 }
