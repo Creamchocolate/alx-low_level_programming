@@ -8,7 +8,10 @@
 
 int main(void)
 {
-	int _putchar(char c);
+	_putchar('m');
+	_putchar('a');
+	_putchar('i');
+	_putchar('n');
 	_purchar('\n');
 	return (0);
 }
