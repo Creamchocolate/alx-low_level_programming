@@ -12,7 +12,5 @@ int _abs(int r)
 	{
 		_putchar(r * r);
 	}
-	else
-	{
-		_putchar((r * r) / 2);
-	}
+	_putchar((r * r) / 2);
+}
