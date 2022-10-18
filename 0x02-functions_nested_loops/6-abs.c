@@ -1,17 +1,17 @@
 #include "main.h"
 /**
  * _abs - Entry point
- *
+ * @r: integer
  * Return: Always 0 (success)
  */
 int _abs(int r)
 {
-	if (r == -1 || r == 1)
+	if (r >= 0)
 	{
-		return (r * r);
+		return (r);
 	}
 	else
 	{
-		return ((r * r) / 2);
+		return ((r) / -1);
 	}
 }
