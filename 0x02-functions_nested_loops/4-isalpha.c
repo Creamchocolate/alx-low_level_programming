@@ -15,10 +15,14 @@ int _isalpha(int c)
 
 		for (ph = 'a'; ph <= 'z'; ph++)
 		{
-			if (c == ch && c == ph)
+			if (c == ph)
 			{
 				return (1);
 			}
+		}
+		if (c == ch)
+		{
+			return (1);
 		}
 	}
 	return (0);
