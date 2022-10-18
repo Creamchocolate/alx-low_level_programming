@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _print_sign - Entry point
+ * print_sign - Entry point
  * @n: integer
  * Return: signs either 1 0 -1
  */
 
-int _print_sign(int n)
+int print_sign(int n)
 {
 	if (n > 0)
 	{
