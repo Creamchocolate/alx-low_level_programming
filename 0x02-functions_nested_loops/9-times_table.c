@@ -5,7 +5,7 @@
  * Return: Always 0 (success)
  */
 
-int times_table(void)
+void times_table(void)
 {
 	int a, b, c;
 
@@ -25,7 +25,7 @@ int times_table(void)
 				_putchar(' ');
 				_putchar(c + '0');
 			}
-			else (c >= 10)
+			else if  (c >= 10)
 			{
 				_putchar(',');
 				_putchar(' ');
