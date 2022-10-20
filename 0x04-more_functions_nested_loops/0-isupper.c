@@ -13,11 +13,11 @@ int _isupper(int c)
 	{
 		if (c == i)
 		{
-			Return 1;
+			Return (1);
 		}
 		else
 		{
-			Return 0;
+			Return (0);
 		}
 	}
 }
