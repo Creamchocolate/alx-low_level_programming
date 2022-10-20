@@ -1,4 +1,6 @@
 #include "main.h"
+#include "limits.h"
+
 /**
  * print_number - print integers only
  * @n: integers
@@ -11,12 +13,12 @@ void print_number(int n)
 	int digit;
 	int places = 1000000000;
 
-	if (n < 0)
+	if (n < 0)/* E */
 	{
 		x = -n;
 		_putchar('-');
 	}
-	if (n == INT_MAX || n == INT_MIN)
+	if (n == INT_MAX || n == INT_MIN) /* D */
 	{
 		while (1)
 		{
@@ -50,21 +52,18 @@ void print_number(int n)
 			}
 		}
 	}
-	else if (n == 0)
-	{
+	else if (n == 0)/* A */
 		_putchar('0');
-	}
 	else
 	{
-		while (places > x)
-		{
+		while (places > x)/* B */
 			places /= 10;
-		}
 		while (places > 0)
 		{
-			digit = x / places;
+			digit = x / places;/* C */
 			_putchar((digit % 10) + '0');
 			places /= 10;
 		}
 	}
 }
+
