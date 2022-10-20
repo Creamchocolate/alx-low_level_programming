@@ -13,17 +13,15 @@ int main(void)
 	unsigned long biggest = 0;
 	unsigned long number = 612852475143;
 
-	while (number > i)
+	while (number > i)/* B */
 	{
-		while (number % i == 0)
+		while (number % i == 0)/* C */
 		{
 			if (i > biggest)
-			{
 				biggest = i;
-			}
 			number = number / i;
 		}
-		i++;
+		i++;/* D */
 	}
 	printf("%lu\n", biggest);
 	return (0);
