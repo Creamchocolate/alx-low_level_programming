@@ -1,4 +1,5 @@
 #include "main.h"
+#include "stdio.h"
 /**
  * print_array - print arrays of integers
  * @a: integers
