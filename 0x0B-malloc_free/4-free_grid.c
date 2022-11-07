@@ -1,6 +1,5 @@
-
 #include "main.h"
-#include "stdlib"
+#include "stdlib.h"
 /**
 * free_grid - a function that frees up a 2d grid created by script 3
 * @grid: a pointer to a pointer. a 2d array. a grid
