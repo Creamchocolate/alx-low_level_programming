@@ -25,31 +25,31 @@ int main(int argc, char **argv)
 	int index = 0;
 	int tab = 0;
 
-	while (argv[1][size1])//strlength and checks if digit
+	while (argv[1][size1])
 	{
 		ISDIGIT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\##################
 		size1++;
 	}
-	while (argv[2][size2])//strlength and checks if digit
+	while (argv[2][size2])
 	{
 		ISITADIGIT########################################################
 		size2++;
 	}
-	product_size = size1 + size2 + 1;//calculate the range we need
-	product = malloc(sizeof(char) * product_size);//allocates space
+	product_size = size1 + size2 + 1;
+	product = malloc(sizeof(char) * product_size);
 	if (!product)
 		return (98);
-	while (product_size >= 0)//initialize all to 0
+	while (product_size >= 0)
 		product[product_size] = '0';
-	size1--;//because length is 1 more than index
+	size1--;
 	size2--;
 	while (size2 >= 0)
 	{
 		index = tab;
 		for (j = size1; j >= 0; j--)
 		{
-			product = (argv[1][j]-'0') * (argv[2][size2]-'0');
-			product += product[index] -'0';
+			product = (argv[1][j] - '0') * (argv[2][size2] - '0');
+			product += product[index] - '0';
 			product += overflow;
 			overflow = product / 10;
 			product[index] = product % 10 + '0';
@@ -64,7 +64,7 @@ int main(int argc, char **argv)
 		size2--;
 		tab++;
 	}
-	product[index] ='\0';
+	product[index] = '\0';
 	reversestring\\\\\###########################################################
 	printf("%s\n", product);
 	free(product);
